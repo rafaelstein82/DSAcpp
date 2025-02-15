@@ -71,5 +71,10 @@ class LinkedList {
 
 int main (void)
 {
+    std::cout << "Testando instanciação da lista encadeada.\n";
+
+    LinkedList* list = new LinkedList(4);
+    
+    list->printList();
     
 }
