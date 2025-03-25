@@ -52,14 +52,17 @@ class LinkedList {
         }
 
         Node* getHead() {
+            std::cout << "Head: " << head->value << "\n";
             return head;
         }
 
         Node* getTail() {
+            std::cout << "Tail: " << tail->value << "\n";
             return tail; 
         }
 
         int getLength() {
+            std::cout << "Length: " << length << "\n";
             return length;
         }
 
@@ -75,6 +78,9 @@ int main (void)
 
     LinkedList* list = new LinkedList(4);
     
+    list->getHead();
+    list->getTail();
+    list->getLength();
     list->printList();
     
 }
